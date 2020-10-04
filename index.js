@@ -9,8 +9,8 @@ const commandFiles = fs.readdirSync('commands').filter(file => file.endsWith('.j
 
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
-    client.commands.set(command.name, command)
-    console.log(file)
+    client.commands.set(command.name, command);
+    console.log(file);
 }
 
 client.on('ready', () => {
@@ -25,7 +25,10 @@ client.on('message', message => {
     if (command === 'ping') {
         client.commands.get('ping').execute(message, args);
     }
-    console.log(message.author.tag + " used " + command)
+    if (command === 'randomdrink') {
+        client.commands.get('randomdrink').execute(message, args);
+    }
+    console.log(message.author.tag + " used " + command);
 });
 
 client.login(token);
