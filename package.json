@@ -1,0 +1,23 @@
+{
+  "name": "CocktailBot",
+  "version": "1.0.0",
+  "description": "CocktailBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejoeyl/CocktailBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejoeyl/CocktailBot/issues"
+  },
+  "homepage": "https://github.com/thejoeyl/CocktailBot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
